@@ -1,9 +1,25 @@
-body, html {
+body,
+html {
   margin: 0 !important;
   padding: 0 !important;
-  background-color: #ECEDEF;
+  background-color: #ecedef;
+}
+
+.container {
+  margin: 0 140px !important;
+}
+
+.landing-img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 .landing {
-  
+  height: 100vh;
+}
+.landing p {
+  z-index: 0 !important;
+  width: 40%;
 }
