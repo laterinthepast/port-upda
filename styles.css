@@ -1,25 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Notable&family=Padauk:wght@400;700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
 body,
 html {
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 0;
+  padding: 0;
   background-color: #ecedef;
+  font-family: "Padauk", sans-serif;
+  position: relative;
 }
 
-.container {
-  margin: 0 140px !important;
+.nav-links {
+  gap: 100px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-family: "Notable", sans-serif;
+}
+
+.side-nav {
+  position: fixed;
+  height: 100%;
+  left: 10px;
+  gap: 50px;
+}
+.side-nav :hover {
+  transition: all 0.4s ease;
+  padding-left: 5px;
+}
+
+.wrapper {
+  /* margin-right: 0 !important; */
+  margin-right: 0 !important;
+  height: 90vh;
+}
+.wrapper h1 {
+  color: #dd4321;
+  height: 80px;
+  width: auto;
+  overflow: hidden;
+}
+.wrapper h2 {
+  color: #f7cec5;
+  font-size: 17px;
+}
+.wrapper p {
+  padding: 20px 0;
 }
 
 .landing-img {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translate(0, -50%);
+  padding-right: 0 !important;
 }
 
-.landing {
-  height: 100vh;
+.arrow {
+  position: fixed;
+  bottom: 2px;
 }
-.landing p {
-  z-index: 0 !important;
-  width: 40%;
+.arrow :hover {
+  -webkit-animation: colorChange 1s;
+          animation: colorChange 1s;
+  transition: all 0.5s ease-in-out;
+  padding-bottom: 25px;
+}
+
+@-webkit-keyframes colorChange {
+  0% {
+    fill: rgb(228, 182, 182) 0%;
+  }
+  100% {
+    fill: rgb(232, 200, 62) 100%;
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    fill: rgb(228, 182, 182) 0%;
+  }
+  100% {
+    fill: rgb(232, 200, 62) 100%;
+  }
+}
+/* buttons*/
+.button-one {
+  background: linear-gradient(90deg, rgb(161, 212, 193) 0%, rgb(229, 186, 187) 100%);
+  width: 120px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+.button-two {
+  background: linear-gradient(90deg, rgb(228, 182, 182) 0%, rgb(232, 200, 62) 100%);
+  width: 120px !important;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+.about-img {
+  display: flex;
+  justify-content: end;
+}
+.about-img img {
+  width: 30%;
+}
+
+.about-text p {
+  width: 70%;
+}
+
+.project :hover {
+  cursor: pointer;
+}
+
+.projects {
+  padding: 200px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 239px);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 0px;
+}
+.projects img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.one {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.two {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.three {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.four {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.five {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.six {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
