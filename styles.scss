@@ -23,9 +23,8 @@ html {
 @media (max-width: 768px) {
   .wrapper {
     margin-right: auto !important;
-    .landing-img {
-      
-    }
+    background-image: none !important;
+   
   }
   .side-nav {
     height: auto;
@@ -36,11 +35,23 @@ html {
     flex-direction: row !important;
     position: absolute;
   }
+  .hide-mobile {
+    display: none;
+  }
+  .about-img {
+    justify-content: center !important;
+  }
+  .about-text {
+    padding-top: 17px;
+    display: flex;
+    justify-content: center !important;
+    text-align: center;
+  }
 }
 
 .wrapper {
   /* margin-right: 0 !important; */
-  background-image: url('./landing-bg.png');
+  background-image: url("./landing-bg.png");
   background-size: 50%;
   background-position: right;
   background-repeat: no-repeat;
@@ -83,7 +94,7 @@ html {
   );
   width: 120px;
   border: 1px solid #000;
-  border-radius: 5px;
+
   padding: 7px;
 }
 .button-two {
@@ -94,15 +105,37 @@ html {
   );
   width: 120px !important;
   border: 1px solid #000;
-  border-radius: 5px;
+
   padding: 7px;
+}
+.btn1 {
+  :hover {
+    transition: all 0.2s ease-in-out;
+    background: linear-gradient(
+      90deg,
+      rgba(228, 182, 182, 1) 0%,
+      rgba(232, 200, 62, 1) 100%
+    );
+  }
+}
+.btn2 {
+  :hover {
+    background: linear-gradient(
+      90deg,
+      rgba(161, 212, 193, 1) 0%,
+      rgba(229, 186, 187, 1) 100%
+    );
+  }
 }
 
 .about-img {
   display: flex;
   justify-content: end;
+
   img {
     width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   }
 }
 .about-text {

@@ -23,6 +23,7 @@ html {
 @media (max-width: 768px) {
   .wrapper {
     margin-right: auto !important;
+    background-image: none !important;
   }
   .side-nav {
     height: auto;
@@ -32,6 +33,18 @@ html {
     transform: translate(-50%, 0);
     flex-direction: row !important;
     position: absolute;
+  }
+  .hide-mobile {
+    display: none;
+  }
+  .about-img {
+    justify-content: center !important;
+  }
+  .about-text {
+    padding-top: 17px;
+    display: flex;
+    justify-content: center !important;
+    text-align: center;
   }
 }
 .wrapper {
@@ -74,7 +87,6 @@ html {
   background: linear-gradient(90deg, rgb(161, 212, 193) 0%, rgb(229, 186, 187) 100%);
   width: 120px;
   border: 1px solid #000;
-  border-radius: 5px;
   padding: 7px;
 }
 
@@ -82,8 +94,16 @@ html {
   background: linear-gradient(90deg, rgb(228, 182, 182) 0%, rgb(232, 200, 62) 100%);
   width: 120px !important;
   border: 1px solid #000;
-  border-radius: 5px;
   padding: 7px;
+}
+
+.btn1 :hover {
+  transition: all 0.2s ease-in-out;
+  background: linear-gradient(90deg, rgb(228, 182, 182) 0%, rgb(232, 200, 62) 100%);
+}
+
+.btn2 :hover {
+  background: linear-gradient(90deg, rgb(161, 212, 193) 0%, rgb(229, 186, 187) 100%);
 }
 
 .about-img {
@@ -92,6 +112,7 @@ html {
 }
 .about-img img {
   width: 30%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 .about-text p {
