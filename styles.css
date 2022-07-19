@@ -29,7 +29,8 @@ html {
     position: absolute;
   }
 }
-.wrapper, .wrapper-mobile {
+.wrapper,
+.wrapper-mobile {
   width: 70%;
   display: flex;
   justify-content: center;

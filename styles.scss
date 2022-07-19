@@ -8,7 +8,6 @@ html {
   max-height: 100vh;
   font-family: "Press Start 2P", cursive;
 }
-
 .side-nav {
   position: fixed;
   height: 100%;
@@ -28,7 +27,8 @@ html {
     position: absolute;
   }
 }
-.wrapper, .wrapper-mobile {
+.wrapper,
+.wrapper-mobile {
   width: 70%;
   display: flex;
   justify-content: center;
@@ -52,7 +52,7 @@ html {
     padding: 7px !important;
     box-shadow: rgba(231, 229, 229, 0.02) 0px 1px 3px 0px,
       rgba(233, 237, 240, 0.15) 0px 0px 0px 1px;
-      border-radius: 10px;
+    border-radius: 10px;
     p {
       padding: 5px;
     }
@@ -63,7 +63,6 @@ html {
     :hover {
       color: yellow;
     }
-
   }
   a {
     :hover {
@@ -86,7 +85,7 @@ html {
   }
 }
 
-@media (max-width:768px){
+@media (max-width: 768px) {
   .link {
     h1 {
       font-size: 5rem;
