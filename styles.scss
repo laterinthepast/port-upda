@@ -58,10 +58,10 @@ html {
   height: 100vh;
   h1 {
     color: #dd4321;
-    height: 80px;
+    height: 50px;
     width: auto;
-
     overflow: hidden;
+    font-family: "Notable", sans-serif;
   }
   h2 {
     color: #f7cec5;
@@ -139,6 +139,10 @@ html {
   }
 }
 .about-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   p {
     width: 70%;
   }

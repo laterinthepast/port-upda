@@ -57,9 +57,10 @@ html {
 }
 .wrapper h1 {
   color: #dd4321;
-  height: 80px;
+  height: 50px;
   width: auto;
   overflow: hidden;
+  font-family: "Notable", sans-serif;
 }
 .wrapper h2 {
   color: #f7cec5;
@@ -115,6 +116,12 @@ html {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
+.about-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .about-text p {
   width: 70%;
 }
